@@ -582,6 +582,12 @@
 </head>
 
 <body>
+    <audio id="hpbd" src="sound/y2mate.com - Birthday  chill Lofi by L o f i n o o b.mp3" autoplay loop></audio>
+
+    <audio id="unbox" src="sound/y2mate.com - happy birthday sound effect.mp3"></audio>
+
+    <audio id="unbox" src="sound/sound.mp3"></audio>
+
     <div id="card" class="flip-card hidden">
         <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -613,7 +619,7 @@
                     you are. My english is not good enough to express my mood or something. But I felt so special went I'm with you. Althougt 
                     I can't give you everything you want because of my sort of money but in the fukin next future, I promise to give you all 
                     the happinst thing that I can do. Also with all the sweetest words, I hope this year brings you all the love, joy, and happiness you deserve.
-                    Thank you for being by my side through thick and thin, and for making every day brighter with your smile. Here's to many
+                    Thank you for being by my side through thick and thin, and for making every day brighter with your huge of cute. Here's to many
                     more birthdays together! 
                 </i>
                 <p class="end">
@@ -632,9 +638,10 @@
 
     <button id="myBtn" class="btn hidden" >Đây nữa nè!</button>
 
+
     <audio id="audio" src="sound/y2mate.com - Pop Bubble Sound Effect 2022.mp3"></audio>
 
-    <audio id="music" src="sound/y2mate.com - Khi Em Lớn  Orange ft Hoàng Dũng x DinoLo  Fi Version by 1 9 6 7 Audio Lyrics.mp3"></audio>
+    <!-- <audio id="music" src="sound/y2mate.com - Khi Em Lớn  Orange ft Hoàng Dũng x DinoLo  Fi Version by 1 9 6 7 Audio Lyrics.mp3"></audio> -->
 
     <canvas id="canvas"></canvas>
     <div id="merrywrap" class="merrywrap">
@@ -1323,6 +1330,11 @@
                 merrywrap.className = 'merrywrap step-' + step;
             }
             function openBox() {
+                document.getElementById('unbox').play();
+                document.getElementById('hpbd').play();
+                
+                
+                // setTimeout(chay,2000);
                 if (step === 1) {
                     box.removeEventListener("click", openBox, false);
                 }

@@ -7,7 +7,7 @@ function showElement(){
 // }
 
 
-setTimeout(showElement,10000);
+setTimeout(showElement,12000);
 
 const btn=document.getElementById('myBtn');
 const card=document.getElementById('card');
